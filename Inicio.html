@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página De Inicio</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body style="position: relative; min-height: 100vh">
+
+   <header class="header">
+      <section class="flex">
+         <strong><a href="#" class="logo">ProfeRewiew</a></strong>
+         <form action="#" method="POST" class="search-form">
+            <input type="text" name="search_box" class="box" maxlength="100" placeholder="buscar profesores" required>
+            <button type="submit" class="fas fa-search" name="search_btn"></button>
+         </form>
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+         </div>
+      </section>
+   </header>
+   <section class="home-grid">
+      <div class="box-container">
+         <div class="box">
+            <p class="name">¡Inicia Sesión O Registrate!</p>
+            <div class="flex-btn">
+               <a href="iniciar.html" class="option-btn">Iniciar</a>
+               <a href="registrar.html" class="option-btn">Registrarse</a>
+            </div>
+         </div>
+         <div class="box">
+            <p>Cursos</p>
+            <div class="flex-box">
+               <a href="#" class="links">Matemática</a>
+               <a href="#" class="links">Ingles</a>
+               <a href="#" class="links">Estadística</a>
+               <a href="#" class="links">Química</a>
+               <a href="#" class="links">Bases De Datos</a>
+               <a href="#" class="links">Ética Profesional</a>
+               <a href="#" class="btn">ver todos los cursos</a>
+            </div>
+         </div>
+         <div class="box">
+            <p>ADMINISTRADORES</p>
+            <div class="flex-box">
+               <a href="#" class="btn">ver todos los admins</a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="posts-container">
+      <h1 class="heading">PROFESORES</h1>
+      <div class="box-container">
+      </div>
+      <div class="more-btn" style="text-align: center; margin-top:1rem;">
+         <a href="#" class="inline-btn">¡VER TODOS LOS PROFESORES!</a>
+      </div>
+   </section>
+   <footer class="footer" style="position: absolute; bottom: 0;">
+      <span>Profe Review</span> - ¡Tú Decides!
+   </footer>
+</body>
+</html>

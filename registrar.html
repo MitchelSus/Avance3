@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <section class="flex">
+           <strong><a href="Inicio.html" class="logo">ProfeRewiew</a></strong>
+           <form action="#" method="POST" class="search-form">
+              <input type="text" name="search_box" class="box" maxlength="100" placeholder="buscar profesores" required>
+              <button type="submit" class="fas fa-search" name="search_btn"></button>
+           </form>
+           <div class="icons">
+              <div id="menu-btn" class="fas fa-bars"></div>
+              <div id="search-btn" class="fas fa-search"></div>
+              <div id="user-btn" class="fas fa-user"></div>
+           </div>
+        </section>
+     </header>
+
+<section class="form-container">
+   <form action="" method="post" novalidate="">
+      <h3>REGISTRATE</h3>
+      <input type="text" name="name" required placeholder="Ingresa Tu Nombre" class="box" maxlength="50">
+      <input type="email" name="email" required  placeholder="Ingresa Tu E-MAIL" class="box"  maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" name="pass" required  placeholder="Ingresa Tu Contraseña" class="box"  maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" name="cpass" required  placeholder="Repite Tu Contraseña" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="submit" value="¡Registrate Ahora!" name="submit" class="btn">
+      <p>¿ya tienes una cuenta? <a href="#">¡Ingresa Ahora!</a></p>
+   </form>
+<!-- \ssignifica "un espacio", y \s+significa "uno o más espacios".
+oninvalid="this.setCustomValidity('Por favor, rellena este campo')" oninput="setCustomValidity('')"
+Pero, debido a que está usando la /gbandera (reemplazar todas las ocurrencias) y reemplazando con la cadena vacía, sus dos expresiones tienen el mismo efecto. -->
+</section>
+
+<footer class="footer" style="position: absolute; bottom: 0;"> 
+    <span>Profe Review</span> - ¡Tú Decides!
+   </footer>
+
+</body>
+</html>
